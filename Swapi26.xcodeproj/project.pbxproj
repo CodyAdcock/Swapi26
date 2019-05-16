@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C3572C77228DD26100624E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3572C76228DD26100624E5D /* AppDelegate.swift */; };
-		C3572C79228DD26100624E5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3572C78228DD26100624E5D /* ViewController.swift */; };
 		C3572C7C228DD26100624E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3572C7A228DD26100624E5D /* Main.storyboard */; };
 		C3572C7E228DD26400624E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3572C7D228DD26400624E5D /* Assets.xcassets */; };
 		C3572C81228DD26400624E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3572C7F228DD26400624E5D /* LaunchScreen.storyboard */; };
+		C3572C90228DD5B800624E5D /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3572C8F228DD5B700624E5D /* CategoryTableViewController.swift */; };
+		C3572C92228DDACA00624E5D /* swapiObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3572C91228DDACA00624E5D /* swapiObject.swift */; };
+		C3572C94228DDAD900624E5D /* swapiObjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3572C93228DDAD900624E5D /* swapiObjectController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C3572C73228DD26100624E5D /* Swapi26.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swapi26.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3572C76228DD26100624E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3572C78228DD26100624E5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3572C7B228DD26100624E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3572C7D228DD26400624E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3572C80228DD26400624E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3572C82228DD26400624E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3572C8F228DD5B700624E5D /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		C3572C91228DDACA00624E5D /* swapiObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swapiObject.swift; sourceTree = "<group>"; };
+		C3572C93228DDAD900624E5D /* swapiObjectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swapiObjectController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,56 @@
 		C3572C75228DD26100624E5D /* Swapi26 */ = {
 			isa = PBXGroup;
 			children = (
-				C3572C76228DD26100624E5D /* AppDelegate.swift */,
-				C3572C78228DD26100624E5D /* ViewController.swift */,
-				C3572C7A228DD26100624E5D /* Main.storyboard */,
-				C3572C7D228DD26400624E5D /* Assets.xcassets */,
-				C3572C7F228DD26400624E5D /* LaunchScreen.storyboard */,
-				C3572C82228DD26400624E5D /* Info.plist */,
+				C3572C8D228DD3A400624E5D /* Models */,
+				C3572C8C228DD3A100624E5D /* Model Controllers */,
+				C3572C8A228DD39E00624E5D /* ViewControllers */,
+				C3572C88228DD39700624E5D /* Storyboards */,
+				C3572C8E228DD40500624E5D /* Resources */,
 			);
 			path = Swapi26;
+			sourceTree = "<group>";
+		};
+		C3572C88228DD39700624E5D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C3572C7A228DD26100624E5D /* Main.storyboard */,
+				C3572C7F228DD26400624E5D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C3572C8A228DD39E00624E5D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3572C8F228DD5B700624E5D /* CategoryTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C3572C8C228DD3A100624E5D /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3572C93228DDAD900624E5D /* swapiObjectController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		C3572C8D228DD3A400624E5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3572C91228DDACA00624E5D /* swapiObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3572C8E228DD40500624E5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3572C76228DD26100624E5D /* AppDelegate.swift */,
+				C3572C7D228DD26400624E5D /* Assets.xcassets */,
+				C3572C82228DD26400624E5D /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3572C79228DD26100624E5D /* ViewController.swift in Sources */,
+				C3572C92228DDACA00624E5D /* swapiObject.swift in Sources */,
+				C3572C94228DDAD900624E5D /* swapiObjectController.swift in Sources */,
 				C3572C77228DD26100624E5D /* AppDelegate.swift in Sources */,
+				C3572C90228DD5B800624E5D /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = Swapi26/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Swapi26/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = Swapi26/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Swapi26/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
