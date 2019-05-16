@@ -14,7 +14,10 @@ class CategoryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        //Set the title-card for header image
+        let imageView = UIImageView(image: UIImage(named: "title-card"))
+        imageView.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = imageView
         
     }
 

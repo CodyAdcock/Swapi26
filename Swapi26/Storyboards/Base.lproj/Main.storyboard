@@ -45,7 +45,7 @@
                             <outlet property="delegate" destination="8ih-Be-4DY" id="4CN-Ka-uk5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Categories" id="ENm-Jw-Ee1"/>
+                    <navigationItem key="navigationItem" title="Categories" largeTitleDisplayMode="always" id="ENm-Jw-Ee1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3n-Xd-bMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,9 +148,16 @@
         <scene sceneID="kEI-nb-bVd">
             <objects>
                 <navigationController id="DjH-nL-chL" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vf8-D0-j4M">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="vf8-D0-j4M">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.97753510860000004" blue="0.0012503010419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <color key="textShadowColor" red="1" green="0.97753510861865001" blue="0.0012503010419572247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="8ih-Be-4DY" kind="relationship" relationship="rootViewController" id="mSI-TW-nbY"/>
